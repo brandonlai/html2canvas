@@ -97,6 +97,8 @@ const parseDisplayValue = (display: string): Display => {
             return DISPLAY.INLINE_FLEX;
         case 'inline-grid':
             return DISPLAY.INLINE_GRID;
+        case '-webkit-box':
+            return DISPLAY.FLEX;
     }
 
     return DISPLAY.NONE;
